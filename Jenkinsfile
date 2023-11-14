@@ -21,7 +21,7 @@ pipeline {
 
         stage('Validate Deployment') {
             steps {
-                sh 'sf deploy metadata preview -d path_to_your_metadata_folder'
+                sh 'sf deploy metadata preview -d force-app/main/default'
             }
         }
 
