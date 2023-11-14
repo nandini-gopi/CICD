@@ -7,7 +7,6 @@ pipeline {
                 checkout scm
             }
         }
-
         stage('Authenticate with Salesforce') {
             steps {
                 script {
